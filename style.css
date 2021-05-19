@@ -1,0 +1,10 @@
+p {
+  color: blueviolet;
+  text-align: justify;
+}
+
+h1 {
+  color: darkturquoise;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

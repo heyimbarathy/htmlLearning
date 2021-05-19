@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Preferences</title>
+    <style>
+      /*
+        1st preference ID
+        2nd preference class
+        3rd preference element
+        !important is the atmost priority
+        */
+      p {
+        color: lightgreen;
+      }
+      #box p {
+        color: red;
+      }
+      .test {
+        color: sandybrown !important;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel
+      accusantium quia iusto id aspernatur ad itaque? Quis, nesciunt nobis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel
+      accusantium quia iusto id aspernatur ad itaque? Quis, nesciunt nobis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel
+      accusantium quia iusto id aspernatur ad itaque? Quis, nesciunt nobis.
+    </p>
+    <div id="box">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel
+        accusantium quia iusto id aspernatur ad itaque? Quis, nesciunt nobis.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel
+        accusantium quia iusto id aspernatur ad itaque? Quis, nesciunt nobis.
+      </p>
+      <p class="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vel
+        accusantium quia iusto id aspernatur ad itaque? Quis, nesciunt nobis.
+      </p>
+    </div>
+  </body>
+</html>
