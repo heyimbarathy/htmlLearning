@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Selectors</title>
+    <style>
+      .box > h3 {
+        color: red;
+      }
+      div[class]{
+        background:aqua;
+      }
+      a[title="Link1"]{
+        background:rgb(255, 153, 0);
+        color:aquamarine;
+      }
+      a[href^="test"]{
+        color:chartreuse;
+      }
+      a[href$="html"]{
+        color:brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>More Selectors in CSS</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+      aliquid, officia fuga maxime voluptas repellat optio at placeat id velit!
+    </p>
+    <h3>H3 tag</h3>
+    <div class="box">
+      <p>
+        ipsum, dolor sit amet consectetur adipisicing elit. Recusandae aliquid,
+        officia fuga maxime voluptas repellat optio at placeat id velit!
+      </p>
+      <p>
+        ipsum, dolor sit amet consectetur adipisicing elit. Recusandae aliquid,
+        officia fuga maxime voluptas repellat optio at placeat id velit!
+      </p>
+      <div class="inner">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          excepturi.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          excepturi.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+          excepturi.
+        </p>
+      </div>
+      <h3>H3 tag</h3>
+    
+    <p>
+      ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, excepturi.
+    </p>
+    <p>dolor sit amet consectetur adipisicing elit. Cupiditate, excepturi.</p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+      excepturi.
+    </p>
+    <a href="#" title="Link1">Link-1</a>
+    <a href="html_test.html" title="Link2">Link-2</a>
+    <a href="test.png" title="Link3">Link-3</a>
+  </body>
+</html>

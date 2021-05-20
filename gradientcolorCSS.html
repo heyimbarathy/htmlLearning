@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient color in CSS</title>
+    <style>
+      .box {
+        width: 200px;
+        height: 300px;
+        background: -webkit-linear-gradient(45deg, orange, red);
+      }
+      .box2 {
+        width: 200px;
+        height: 300px;
+        background: -webkit-linear-gradient(bottom, orange, red);
+        border-radius: 10px;
+        margin: 10px;
+      }
+      .box3 {
+        width: 200px;
+        height: 300px;
+        background: rgb(255, 0, 0);
+        border-radius: 10px;
+        margin: 10px;
+      }
+      .box4 {
+        width: 200px;
+        height: 300px;
+        background: #990000;
+        border-radius: 10px;
+        margin: 10px;
+      }
+      .box5 {
+        width: 200px;
+        height: 300px;
+        background: rgba(255, 255, 0, 0.5);
+        border-radius: 10px;
+        margin: 10px;
+      }
+      .shadow {
+        -webkit-box-shadow: 5px 10px 5px 0px rgba(255, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gradient color in CSS</h1>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5 shadow"></div>
+  </body>
+</html>
