@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html {
+        background: linear-gradient(white, grey);
+        width: 625px;
+        height: 600px;
+      }
+
+      h2 {
+        font-family: Comicsans;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      fieldset {
+        background: linear-gradient(yellow, green);
+        border-radius: 20px;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+      }
+      legend {
+        margin: auto;
+      }
+      input[type="text"] {
+        width: 150px;
+        display: block;
+        margin-bottom: 10px;
+        margin: auto;
+        background-color: yellow;
+      }
+
+      input[type="button"] {
+        width: 120px;
+        margin-top: 20px;
+        margin-left: 30px;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Styling Forms</h2>
+    <fieldset>
+      <legend>Registration Form</legend>
+      <form name="input" action="" method="get">
+        Firstname:<input type="text" name="Name" value="Peter" size="20" />
+        Lastname:<input type="text" name="Name" value="Griffin" size="20" />
+        <input type="button" value="Example Button" />
+      </form>
+    </fieldset>
+  </body>
+</html>
