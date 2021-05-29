@@ -10,8 +10,14 @@
   <body>
     <form onsubmit="return validate()" action="message.html">
       <input id="uname" type="text" placeholder="Username" />
+      <label id="lbluser" style="color: red; visibility: hidden; margin: 10px"
+        >* Blank Username</label
+      >
       <br /><br />
       <input id="pass" type="password" placeholder="Password" />
+      <label id="lblpass" style="color: red; visibility: hidden; margin: 10px"
+        >* Blank Password</label
+      >
       <br /><br />
       <button type="submit">Submit</button>
     </form>
