@@ -9,22 +9,25 @@ body {
   font-family: sans-serif;
 }
 .login-box {
-  width: 280px;
+  padding: 20px;
+  width: 300px;
   position: absolute;
   top: 250px;
-  right: 350px;
+  right: 300px;
+  border-radius: 10px;
   transform: translate(-50%, -50%);
-  color: white;
+  background: white;
+  opacity: 50%;
+  color: black;
 }
 .login-box h1 {
-  width: 120px;
-
+  width: 118px;
   font-size: 40px;
   border-bottom: 3px solid black;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 3px;
 }
-.textbox {
+#user-textbox {
   width: 100%;
   overflow: hidden;
   font-size: 20px;
@@ -32,31 +35,65 @@ body {
   margin: 8px 0;
   border-bottom: 1px solid black;
 }
-.textbox i {
+#pass-textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid black;
+}
+
+#user-textbox i {
   width: 25px;
   float: left;
   text-align: center;
 }
-.textbox input {
+#pass-textbox i {
+  width: 25px;
+  float: left;
+  text-align: center;
+}
+#uname {
   border: none;
   outline: none;
   background: none;
-  color: white;
+  color: black;
   font-size: 18px;
-  width: 80px;
+  width: 250px;
+  float: left;
+  margin: 0 5px;
+}
+#pass {
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 18px;
+  width: 250px;
   float: left;
   margin: 0 5px;
 }
 .btn {
   width: 100%;
   border: 2px solid black;
-  background: none;
+  background: black;
   color: white;
   padding: 5px;
   margin-top: 10px;
   border-radius: 5px;
 }
 .btn:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
+}
+#lbluser {
+  visibility: hidden;
+  color: red;
+  font-size: 13px;
+}
+#lblpass {
+  visibility: hidden;
+  color: red;
+  font-size: 13px;
 }
