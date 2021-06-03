@@ -1,0 +1,35 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: grey;
+}
+.heading {
+  width: 100%;
+  height: 120px;
+}
+.heading h1 {
+  padding-top: 40px;
+  text-align: center;
+  color: rebeccapurple;
+}
+.heart {
+  margin-left: 45%;
+  position: relative;
+  height: 160px;
+  width: 100px;
+  background-color: purple;
+  border-radius: 200px 200px 0 0;
+  transform: rotate(45deg);
+}
+.heart::before {
+  content: "";
+  position: absolute;
+  height: 160px;
+  width: 100px;
+
+  top: 30px;
+  left: -30px;
+  background-color: purple;
+  transform: rotate(-90deg);
+  border-radius: 200px 200px 0 0;
+}

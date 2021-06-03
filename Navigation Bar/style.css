@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Poppins:wght@500&display=swap");
+/* To reset the default values */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #f0f3f4;
+  width: 100%;
+  height: 200%;
+}
+.content {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#heading {
+  margin: 10px;
+}
+p {
+  margin: 10px;
+  text-align: justify;
+}
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fbb813;
+}
+
+.nav-container {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  background: linear-gradient(to right, #581845, #992476);
+  height: 15vh;
+  box-shadow: 0px 5px 10px 3px grey;
+}
+nav {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 15vh;
+}
+
+.logo img {
+  height: 100%;
+  clip-path: circle(50%);
+}
+.company-name {
+  position: absolute;
+  color: #fbb813;
+  top: 10px;
+  left: 80px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+.nav-links li a:hover {
+  color: #f0efef;
+}
+.nav-links li:hover {
+  transform: scale(1.5);
+  transition: transform 0.3s;
+}
+.arrow {
+  height: 5vh;
+  width: 30px;
+  transform: translateY(100%);
+  display: none;
+}
+.line1,
+.line2,
+.line3 {
+  width: 100%;
+  height: 20%;
+  background-color: #f0f3f4;
+  margin-top: 4px;
+  border-radius: 5px;
+  transition: transform 0.5s;
+}
+
+@media screen and (max-width: 925px) {
+  .nav-links {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .nav-links {
+    /* display: none; */
+    position: fixed;
+    top: 15vh;
+    right: 0;
+    width: 70%;
+    height: 85vh;
+    background-color: #992476;
+    flex-direction: column;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+  }
+  .arrow {
+    display: block;
+  }
+}
+
+.display {
+  transform: translateX(0%);
+}
+.toggle1 {
+  transform: rotate(45deg) translate(0px, 10px);
+  transition: transform 0.5s;
+}
+.toggle2 {
+  transform: rotate(-45deg) translate(-3px, -8px);
+  transition: transform 0.5s;
+}
+.toggle3 {
+  display: none;
+}
