@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Query</title>
+    <style>
+      .color {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dom Query first in jQuery</h1>
+    <ul class="list">
+      <li>Graphics Designing</li>
+      <li>Web Designing</li>
+      <li>Programming</li>
+      <ul>
+        <li>C program</li>
+        <li>Java</li>
+        <li>C++ Program</li>
+        <li>Python</li>
+      </ul>
+    </ul>
+    <script src="js/jQuery.js"></script>
+    <script>
+      $("document").ready(function () {
+        $("ul.list").children("li").first().addClass("color");
+        // $("ul.list").children("li:first-child").first().addClass("color");
+        $("ul.list")
+          .children("li:nth-child(2)")
+          .text("Text changed by css property");
+        $("ul.list").children("li").eq(2).text("Text changed by eq");
+      });
+    </script>
+  </body>
+</html>

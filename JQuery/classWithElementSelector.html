@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class with element Selector in jQuery</title>
+  </head>
+  <body>
+    <h1>Class with element Selector in jQuery</h1>
+    <i class="a">Sample Contents</i>
+    <p class="a">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur
+      repellendus, eius non quas expedita nisi laboriosam numquam, suscipit quae
+      temporibus quo iste aperiam in mollitia nostrum sint architecto
+      blanditiis? Fugit minima pariatur ratione harum quaerat voluptate iure
+      similique quam delectus tenetur eius vel quae, unde tempora doloremque.
+      Pariatur, rerum.
+    </p>
+    <br />
+    <p class="b">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+      recusandae eaque est ut delectus? Dignissimos explicabo nobis asperiores
+      modi voluptatum quas eaque, sunt repudiandae cum. Optio provident quisquam
+      maxime a ratione ducimus molestiae libero odit, autem mollitia, animi
+      reprehenderit voluptatibus aliquid error voluptas debitis quo aspernatur
+      deleniti eveniet facere amet!
+    </p>
+    <script src="js/jQuery.js"></script>
+    <script>
+      $("document").ready(function () {
+        $(".a").css("color", "purple");
+        $(".b").css("color", "green");
+        $("i.a").css("font-size", "40px");
+      });
+    </script>
+  </body>
+</html>

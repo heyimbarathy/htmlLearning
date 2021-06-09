@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odd Even Selector in jQuery</title>
+  </head>
+  <body>
+    <h1>Odd Even Selector in jQuery</h1>
+    <table border="2px">
+      <tr>
+        <th>Coloumn1</th>
+        <th>Coloumn2</th>
+      </tr>
+      <tr class="a">
+        <td>Data 0</td>
+        <td>Value 0</td>
+      </tr>
+      <tr class="a">
+        <td>Data 1</td>
+        <td>Value 1</td>
+      </tr>
+      <tr class="a">
+        <td>Data 2</td>
+        <td>Value 2</td>
+      </tr>
+      <tr class="a">
+        <td>Data 3</td>
+        <td>Value 3</td>
+      </tr>
+      <tr class="a">
+        <td>Data 4</td>
+        <td>Value 4</td>
+      </tr>
+      <tr class="a">
+        <td>Data 5</td>
+        <td>Value 5</td>
+      </tr>
+
+      <tr class="a">
+        <td>Data 6</td>
+        <td>Value 6</td>
+      </tr>
+    </table>
+    <script src="js/jQuery.js"></script>
+    <script>
+      $("document").ready(function () {
+        $(".a:odd").css("color", "purple");
+        $(".a:odd").css("font-size", "20px");
+        $(".a:even").css("color", "dodgerblue");
+        $(".a:even").css("font-size", "20px");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Selector in JQuery</title>
+  </head>
+  <body>
+    <h1 id="hd1">This is H1 Tag</h1>
+    <h1>This is second H1 Tag</h1>
+    <h2>This is H2 Tag</h2>
+    <script src="js/jQuery.js"></script>
+    <script>
+      $("document").ready(function () {
+        $("#hd1").click(function () {
+          var a = $(this).html();
+          console.log(a);
+        });
+      });
+    </script>
+  </body>
+</html>

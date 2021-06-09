@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contains in jQuery</title>
+  </head>
+  <body>
+    <h1>Contains in jQuery</h1>
+    <p>Contains color check</p>
+    <p>Contains without color</p>
+    <i>This is italic element</i>
+    <script src="js/jQuery.js"></script>
+    <script>
+      $("document").ready(function () {
+        $("p:contains(check)").css("color", "purple");
+      });
+    </script>
+  </body>
+</html>

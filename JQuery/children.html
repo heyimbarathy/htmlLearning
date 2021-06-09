@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Children in jQuery</title>
+    <style>
+      li {
+        color: darkgoldenrod;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h1>Children in jQuery</h1>
+    <ul class="ulist">
+      <li>Computer Science</li>
+      <li>Mechanical Engineering</li>
+      <li>Civil Engineering</li>
+      <h3>For Find</h3>
+      <li>
+        <ul>
+          <li>Aeronatical Engineering</li>
+          <li>Aerospace Engineering</li>
+          <h3>For find</h3>
+        </ul>
+      </li>
+    </ul>
+    <script src="js/jQuery.js"></script>
+    <script>
+      $("document").ready(function () {
+        $("ul.ulist").children("li").css("color", "red");
+        $("ul.ulist").find("h3").css("color", "purple");
+      });
+    </script>
+  </body>
+</html>

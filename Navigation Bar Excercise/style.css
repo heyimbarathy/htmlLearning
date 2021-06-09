@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Yellowtail&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Sen", sans-serif;
+  color: #fff;
+}
+body {
+  top: 30px;
+  height: 600px;
+  width: 100%;
+
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+.nav-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 15vh;
+  width: 100%;
+  background-color: #011c40;
+}
+nav {
+  display: flex;
+  width: 95%;
+  height: 15vh;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style-type: none;
+
+  width: 40%;
+  display: flex;
+  float: right;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #5d8aa6;
+}
+
+.image {
+  overflow: auto;
+  width: 100%;
+  margin-left: 230px;
+  margin-top: 0px;
+}
+.slogan {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  top: 525px;
+}
+h6 {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-size: 10px;
+  padding: 3px;
+
+  background-color: #011c40;
+}
+p {
+  margin: 0;
+  font-size: 50px;
+
+  text-transform: uppercase;
+  text-align: center;
+  color: #011c40;
+  text-shadow: 2px 2px 3px grey;
+  font-family: "Amatic SC", cursive;
+  word-spacing: 1px;
+}
+li:hover {
+  transform: scale(1.5);
+  transition: transform 0.6s;
+}
+
+@media screen and (max-width: 1045px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 985px) {
+  .nav-links {
+    width: 60%;
+  }
+}

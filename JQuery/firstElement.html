@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Element in JQuery</title>
+  </head>
+  <body>
+    <h1>This is H1 Tag</h1>
+    <i class="a">This is italic tag with class a</i>
+    <p id="b">This is paragraph tag with id b</p>
+    <i class="a">This is italic tag with another class a</i>
+    <i class="a">This is italic tag with another class a</i>
+    <i class="a">This is italic tag with another class a</i>
+    <script src="js/jQuery.js"></script>
+    <script>
+      $("document").ready(function () {
+        $(".a:first").css("color", "orange");
+        $(".a:last").css("color", "green");
+        // $(".a:odd").css("color", "purple");
+        // $(".a:even").css("color", "red");
+      });
+    </script>
+  </body>
+</html>
