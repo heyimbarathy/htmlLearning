@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Change color with drop down menu</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section id="main">
+		<div class="bg">Red</div>
+			<select class="color" onchange="changeColor(this)">
+				<option value="red">Red</option>
+				<option value="purple">Purple</option>
+				<option value="green">Green</option>
+				<option value="yellow">Yellow</option>
+				<option value="deeppink">Pink</option>
+			</select>
+	</section>
+	<script>
+		function changeColor(getColor) {
+			let color = document.querySelector(".color");
+			let section = document.querySelector("section");
+			let bg = document.querySelector(".bg");
+			let text = getColor.options[getColor.selectedIndex].text;
+			section.style.background = color.value;
+			bg.innerHTML = text;
+		}
+	</script>
+		
+</body>
+</html>
