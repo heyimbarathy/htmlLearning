@@ -10,36 +10,40 @@ body {
 	width: 100%;
 	height: 100vh;
 	background: linear-gradient(rgba(0,0,0,0.75),rgba(0,105,62,0.75)),url(images/green-leaves.jpg);
-
 	/* background: linear-gradient(rgba(99,212,113,0.75), rgba(35,51,41.0.75),url(images/green-leaves.jpg); */
 	background-size: cover;
 	background-position: center;
 }
 .nav-container {
 	width: 100%;
-	height: 15vh;
+	height: 12vh;
+	background-color: rgba(0,0,0,0.50);
+	z-index:-1;
 }
 nav {
 	width: 95%;
-	height: 15vh;
+	height: 12vh;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
-	align-item:center;
+	align-items:center;
 }
 nav .logo {
 	color: #00693e;
 	width: 130px;
+	height: 12vh;
 	padding: 20px;
+	margin:2px;
 	user-select:none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background-color: #b7ad9c;
-	border-radius: 0 0 10px 10px;
-	z-index:-1;
+	border-radius: 0 0 25px 25px;
+	z-index:1;
 	position: relative;
-	
+
+	filter: drop-shadow(0 0 0.75rem green);
 }
 nav .logo h1 {
 	font-weight: 700;
@@ -51,7 +55,7 @@ nav .logo h1 {
 }
 nav .logo img {
 	width: 100%;
-	height:10vh;
+	height:9vh;
 	position:absolute;
 	top:0;
 	filter: drop-shadow(0 0 0.75rem green);
@@ -67,10 +71,29 @@ nav .logo img {
 	display: flex;
 	justify-content: space-between;
 	align-items:center;
+	
 }
 .list li {
 	list-style-type: none;
+	padding: 2px;
+	position: relative;
 }
+.list li::before {
+	content:"";
+	position: absolute;
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,105,62,0.75);
+	visibility: visible;
+	transition: all 0.3s ease-in-out;	
+}
+.list li:hover::before {
+	width: 100%;
+
+}
+
 .list li a.middle{
 	text-decoration: none;
 	text-transform: uppercase;
@@ -80,21 +103,22 @@ nav .logo img {
 	position:relative;
 }
 
-a.middle:before {
+a.middle::before {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 0;
   height: 2px;
   bottom: 0;
   left: 0;
   background-color: #b7ad9c;
   visibility: hidden;
-  transform: scaleX(0);
+  /* transform: scaleX(0); */
   transition: all 0.3s ease-in-out;
 }
-a.middle:hover:before {
+a.middle:hover::before {
   visibility: visible;
-  transform: scaleX(1);
+  /* transform: scaleX(1); */
+  width: 100%;
 }
 .body-area {
 	width: 100%;
