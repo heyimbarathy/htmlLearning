@@ -7,7 +7,7 @@
     <title>navBar with Hover effect</title>
 	<link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body onselectstart="return false" onpaste="return false;" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off>
   <!-- navigation Bar -->
   <div class="nav-container">
 	  <nav>
@@ -32,7 +32,17 @@
 		<button type="button"><span></span>Subscribe</button>
 	 </div>
   </div>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+	jQuery(document).ready(function(){
+  jQuery(function() {
+        jQuery(this).bind("contextmenu", function(event) {
+            event.preventDefault();
+            alert('Right click disable in this site!!')
+        });
+    });
+});
+  </script>
   
   </body>
 </html>
